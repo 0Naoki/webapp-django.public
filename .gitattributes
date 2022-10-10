@@ -1,0 +1,247 @@
+### gitattributes file
+# =============================================================================
+# Set default behavior to automatically normalize line endings.
+#
+# All files: detect if file is text automatically and perform LF normalization
+# =============================================================================
+#* text=auto
+
+# =============================================================================
+# Program Source File
+# =============================================================================
+# ------------------------------
+# Web Source Files
+# ------------------------------
+*.html    text eol=lf diff=html
+*.htm     text eol=lf diff=html
+*.css     text eol=lf diff=css
+*.scss    text eol=lf diff=css
+*.sass    text eol=lf
+*.less    text eol=lf
+*.js      text eol=lf
+*.json    text eol=lf
+*.jsx     text eol=lf
+*.ts      text eol=crlf
+
+# ------------------------------
+# .NET Source Files
+# ------------------------------
+*.cs      text eol=lf diff=csharp
+*.cshtml  text eol=lf
+*.vb      text eol=lf
+*.vbhtml  text eol=lf
+*.config  text eol=crlf
+*.csproj  text eol=crlf
+*.vbproj  text eol=crlf
+*.sln     text eol=crlf
+
+# ------------------------------
+# C++ Source Files
+# ------------------------------
+*.c       text diff=cpp
+*.cc      text diff=cpp
+*.cxx     text diff=cpp
+*.cpp     text diff=cpp
+*.c++     text diff=cpp
+*.hpp     text diff=cpp
+*.h       text diff=cpp
+*.h++     text diff=cpp
+*.hh      text diff=cpp
+
+# ------------------------------
+# Python Source Files
+# ------------------------------
+*.py      text eol=lf diff=python
+*.py3     text eol=lf diff=python
+*.pyi     text eol=lf diff=python
+*.pyw     text eol=lf diff=python
+*.pyx     text eol=lf diff=python
+*.pyz     text eol=lf diff=python
+
+# ------------------------------
+# Ruby Source Files
+# ------------------------------
+*.rb      text eol=lf diff=ruby
+
+# ------------------------------
+# PHP Source Files
+# ------------------------------
+*.php     text eol=lf diff=php
+
+# ------------------------------
+# Swift Source Files
+# ------------------------------
+*.swift   text eol=lf diff=swift
+*.m       text eol=lf diff=objc
+
+# ------------------------------
+# Linux/Unix Shell
+# ------------------------------
+*.bash    text eol=lf
+*.sh      text eol=lf
+*.zsh     text eol=lf
+
+# ------------------------------
+# Windows Shell
+# ------------------------------
+# These are explicitly windows files and should use crlf
+*.bat     text eol=crlf
+*.cmd     text eol=crlf
+*.ps1     text eol=crlf
+
+# ------------------------------
+# Documentation
+# ------------------------------
+*.md      text eol=lf diff=markdown
+*.csv     text
+*.tsv     text
+*.txt     text
+
+# ------------------------------
+# Other
+# ------------------------------
+*.sql     text eol=lf
+*.svg     text eol=lf
+*.xaml    text eol=lf
+*.xml     text eol=lf
+*.yaml    text eol=lf
+*.yml     text eol=lf
+
+
+# =============================================================================
+# Binary files
+# =============================================================================
+# ------------------------------
+# Executable
+# ------------------------------
+*.exe     binary
+*.pyc     binary
+
+# ------------------------------
+# Compiled Dynamic Library
+# ------------------------------
+*.dll     binary
+*.pdb     binary
+*.pyd     binary
+*.so      binary
+
+# ------------------------------
+# Compiled Static libraries
+# ------------------------------
+*.a       binary
+*.lib     binary
+*.lai     binary
+*.la      binary
+
+# ------------------------------
+# Graphics
+# ------------------------------
+*.ai      binary
+*.aif     binary
+*.aifc    binary
+*.aiff    binary
+*.au      binary
+
+# ------------------------------
+# Images
+# ------------------------------
+*.bmp     binary
+*.exr     binary
+*.gif     binary
+*.gifv    binary
+*.icns    binary
+*.ico     binary
+*.jng     binary
+*.jpg     binary
+*.jpeg    binary
+*.png     binary
+*.psb     binary
+*.psd     binary
+*.tga     binary
+*.tif     binary
+*.tiff    binary
+*.wbmp    binary
+*.webp    binary
+
+# ------------------------------
+# Audio
+# ------------------------------
+*.aif     binary
+*.aiff    binary
+*.mp3     binary
+*.m4a     binary
+*.mid     binary
+*.midi    binary
+*.ogg     binary
+*.wav     binary
+
+# ------------------------------
+# Video
+# ------------------------------
+*.asf     binary
+*.avi     binary
+*.mov     binary
+*.mp4     binary
+*.mpeg    binary
+*.mpg     binary
+*.webm    binary
+
+# ------------------------------
+# Compressed Archives
+# ------------------------------
+*.7z      binary
+*.bz2     binary
+*.gz      binary
+*.jar     binary
+*.rar     binary
+*.tar     binary
+*.zip     binary
+
+# ------------------------------
+# Fonts
+# ------------------------------
+*.eot     binary
+*.otf     binary
+*.ttf     binary
+*.woff    binary
+*.woff2   binary
+
+# ------------------------------
+# Other
+# ------------------------------
+*.chm     binary
+*.db      binary
+*.nupkg   binary
+*.p       binary
+*.pck     binary
+*.pkl     binary
+*.pickle  binary
+*.pyo     binary
+*.snk     binary
+*.whl     binary
+
+# =============================================================================
+# diff behavior for common document formats
+#
+# Convert binary document formats to text before diffing them.
+# This feature is only available from the command line.
+# Turn it on by uncommenting the entries below.
+# =============================================================================
+*.doc     diff=astextplain
+*.DOC     diff=astextplain
+*.docx    diff=astextplain
+*.DOCX    diff=astextplain
+*.dot     diff=astextplain
+*.DOT     diff=astextplain
+*.pdf     diff=astextplain
+*.PDF     diff=astextplain
+*.rtf     diff=astextplain
+*.RTF     diff=astextplain
+
+
+# =============================================================================
+# Exclude files from exporting
+# =============================================================================
+.gitattributes  export-ignore
+.gitignore      export-ignore
+.gitkeep        export-ignore
