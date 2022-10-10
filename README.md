@@ -1,2 +1,5 @@
-# webapp-django.public
-Sample Django Web Application
+# Sample Django Web Application
+
+## Technologies overview
+
+## Architecture overview
