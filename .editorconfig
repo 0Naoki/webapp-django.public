@@ -1,0 +1,234 @@
+# EditorConfig is awesome: https://EditorConfig.org
+
+# top-most EditorConfig file
+root = true
+
+####################################
+# Core EditorConfig Options
+####################################
+
+# ====================
+# Default settings
+# ====================
+[*]
+#--------------------#
+# 改行設定
+end_of_line = lf
+insert_final_newline = true
+trim_trailing_whitespace = true
+
+# インデントと間隔
+indent_style = space
+
+# ====================
+# .NET
+# ====================
+[*.{cs,csx,vb,vbx}]
+#--------------------#
+# エンコーディング
+charset = utf-8-bom
+
+# 改行設定
+end_of_line = lf
+
+# インデントと間隔
+indent_size = 4
+tab_width = 4
+
+# ====================
+# Razor
+# ====================
+[*.{razor,cshtml,vbhtml}]
+#--------------------#
+# エンコーディング
+charset = utf-8-bom
+
+# 改行設定
+end_of_line = lf
+
+# インデントと間隔
+indent_size = 4
+tab_width = 4
+
+# ====================
+# Python
+# ====================
+[*.{py}]
+#--------------------#
+# エンコーディング
+charset = utf-8
+
+# 改行設定
+end_of_line = lf
+
+# インデントと間隔
+indent_size = 4
+tab_width = 4
+
+# 1行当たりの文字数
+max_line_length = 88
+
+# ====================
+# HTML
+# ====================
+[*.html]
+#--------------------#
+# エンコーディング
+charset = utf-8
+
+# 改行設定
+end_of_line = lf
+
+# インデントと間隔
+indent_size = 4
+tab_width = 4
+
+# ====================
+# CSS
+# ====================
+[*.{css,scss,less}]
+#--------------------#
+# エンコーディング
+charset = utf-8
+
+# 改行設定
+end_of_line = lf
+
+# インデントと間隔
+indent_size = 4
+tab_width = 4
+
+# ====================
+# JavaScript
+# ====================
+[*.{js,jsx}]
+#--------------------#
+# エンコーディング
+charset = utf-8
+
+# 改行設定
+end_of_line = lf
+
+# インデントと間隔
+indent_size = 4
+tab_width = 4
+
+# コメント
+block_comment_start = /**
+block_comment = *
+block_comment_end = */
+
+# ====================
+# TypeScript
+# ====================
+[*.ts]
+#--------------------#
+# エンコーディング
+charset = utf-8
+
+# 改行設定
+end_of_line = crlf
+
+# インデントと間隔
+indent_size = 4
+tab_width = 4
+
+# コメント
+block_comment_start = /**
+block_comment = *
+block_comment_end = */
+
+# ====================
+# Minified CSS/JS
+# ====================
+[**.min.{js,css}]
+#--------------------#
+# We don't want to apply our defaults to third-party code or minified bundles:
+indent_style = ignore
+indent_size = ignore
+insert_final_newline = false
+
+# ====================
+# XML
+# ====================
+# XML project files
+[*.{csproj,vbproj,vcxproj,vcxproj.filters,proj,projitems,shproj,builds,config}]
+charset = utf-8
+indent_size = 2
+tab_width = 2
+
+# 改行設定
+end_of_line = crlf
+
+# XML config files
+[*.{xml,props,targets,ruleset,nuspec,resx,vsixmanifest,vsct}]
+charset = utf-8
+indent_size = 2
+tab_width = 2
+
+# ====================
+# JSON
+# ====================
+[*.json]
+#--------------------#
+# エンコーディング
+charset = utf-8
+
+# 改行設定
+end_of_line = lf
+
+# インデントと間隔
+indent_size = 4
+tab_width = 4
+
+# ====================
+# Shell script
+# ====================
+[*.sh]
+#--------------------#
+# エンコーディング
+charset = utf-8
+
+# 改行設定
+end_of_line = lf
+
+# インデントと間隔
+indent_size = 4
+tab_width = 4
+
+# ====================
+# Powershell
+# ====================
+[*.{ps1,psm1}]
+#--------------------#
+# エンコーディング
+charset = utf-8
+
+# 改行設定
+end_of_line = crlf
+
+# インデントと間隔
+indent_size = 4
+tab_width = 4
+
+# ====================
+# Windows Batch
+# ====================
+[*.{cmd,bat}]
+#--------------------#
+# 改行設定
+end_of_line = crlf
+
+# インデントと間隔
+indent_size = 4
+tab_width = 4
+
+# ====================
+# Markdown
+# ====================
+[*.md]
+#--------------------#
+# 改行設定
+end_of_line = lf
+insert_final_newline = true
+trim_trailing_whitespace = false
